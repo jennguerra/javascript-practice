@@ -25,19 +25,22 @@
 
         // isNaN(string.substring (0,1)== true) )
 
+        // (pass.substring(0,1) % 1) != 0)
+
         function password(string) {
-            if ((string.length > 5)&&(string.length < 21) && ( (pass.substring(0,1) % 1) != 0) )
-         {
+            if ((string.length > 5)&&(string.length < 21) && (pass.substring(0,1) % 1) != 0)
+        {
                 alert('password is accepted'); 
-            } else {
-                alert ('password rejected');
+            } 
+            else {
+                alert('password rejected');
 
             }
             
         }
 
         const pass = prompt('input password');
-        password (pass);
+        password(pass);
 
 
     
