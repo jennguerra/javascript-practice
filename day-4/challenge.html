@@ -7,6 +7,14 @@
 </head>
 <body>
     <script>
+
+        // ------------ DAILY CHALLENGE ------------
+// Prompt the user for two different numbers
+// Convert the values to integers
+// Store the two integers as variables
+// Compare the two numbers
+// Alert the larger number
+
         const userResponse = prompt('number please');
         const userResponse2 = prompt('give me another number');
         console.log(parseInt(userResponse), parseInt(userResponse2))
@@ -27,13 +35,13 @@
         const number1 = askForANumber();
         const number2 = askForANumber();
         const number3 = askForANumber();
-        console.log(number1, number2);
+        console.log(number1, number2, number3);
 
         if (number2 > number1) {
             alert(number2);
 
         } else {
-            alert(nummber1);
+            alert(number1);
         }
 
         alert(Math.max(number1, number2, number3))
