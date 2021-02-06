@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+           make = "";
+           model = "";
+           year = "";
+           color = "";
+           
+           constructor (make, model, year, color){
+               this.make = make;
+               this.model = model;
+               this.year = year;
+               this.color = color;
+
+               console.log(this.make, this.model, this.year, this.color);
+
+               const div = document.createElement('div');
+               document.body.appendChild(div);
+               div.innerHTML = this.make + " "+ this.model + " "+ this.year + " "+ this.color; 
+
+
+           }
+
+        } 
+        user1 = new car("toyota", "camry", "2021", "red");
+    </script>
+</body>
+</html>
